@@ -1,4 +1,5 @@
-New Super Mario Bros. Wii: New Horizons (placeholder)
+New Super Mario Bros. Wii: New Horizons: Game files
+You can find the source code [here](https://github.com/TheRealKingPixel/New-Super-Mario-Bros.-Wii-New-Horizons-Source-Code)
 
 # **HOW TO INSTALL:**
 1. Download [NSMBWer+ Vanilla Branch](https://github.com/Ryguy0777/NSMBWerPlus/tree/vanilla-compatible) (click on the "code" button and download ZIP) 

@@ -1,4 +1,4 @@
-New Super Mario Bros. Wii: New Horizons: Game files
+New Super Mario Bros. Wii: New Horizons Game files.
 You can find the source code [here](https://github.com/TheRealKingPixel/New-Super-Mario-Bros.-Wii-New-Horizons-Source-Code)
 
 # **HOW TO INSTALL:**

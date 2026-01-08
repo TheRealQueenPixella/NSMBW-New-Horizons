@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<views>
+	<view name="Enemies">
+		<category name="Classic Enemies">
+			<attach sprite="22"/> <!-- Mini Goomba -->
+		</category>
+		<category name="Overworld and Skies">
+			<attach sprite="273"/> <!-- Ray Spawn 2 -->
+			<attach sprite="486"/> <!-- Shy Guy -->
+			<attach sprite="499"/> <!-- Top Man -->
+			<attach sprite="494"/> <!-- Thundercloud -->
+		</category>
+		<category name="Desert and Underground">
+			<attach sprite="501"/> <!-- Angry Sun -->
+		</category>
+		<category name="Ghost House">
+			<attach sprite="489"/> <!-- Pumpkin Goomba -->
+		</category>
+		<category name="Spawners">
+			<attach sprite="491-492"/> <!-- Actor Spawners -->
+		</category>
+		<category name="Giant">
+			<attach sprite="487"/> <!-- Big Shy Guy -->
+			<attach sprite="506"/> <!-- Giga Goomba -->
+		</category>
+		<category name="Special and Other">
+			<attach sprite="302"/> <!-- Cliff Koopa -->
+		</category>
+	</view>
+	<view name="Platforms and Hazards">
+		<category name="Basic Platforms - Blocks">
+			<attach sprite="497"/> <!-- Magic Platform -->
+		</category>
+		<category name="Uses Line Objects">
+			<attach sprite="533"/> <!-- Line God -->
+		</category>
+		<category name="Environmental Hazards - General">
+			<attach sprite="502"/> <!-- Chestnut -->
+		</category>
+		<category name="Environmental Hazards - Water Based">
+			<attach sprite="532"/> <!-- Water Lift -->
+		</category>
+		<category name="Environmental Hazards - Lava and Airship">
+			<attach sprite="498"/> <!-- Meteor -->
+			<attach sprite="500"/> <!-- Electric Line -->
+			<attach sprite="505"/> <!-- Fire Laser -->
+			<attach sprite="524-526"/> <!-- Captain Bowser -->
+			<attach sprite="493"/> <!-- Clown Car -->
+		</category>
+		<category name="Environmental Effects and Doodads">
+			<attach sprite="503"/> <!-- RYOM -->
+			<attach sprite="507-513"/> <!-- RYOM Loaders -->
+			<attach sprite="504"/> <!-- Effect Spawner -->
+		</category>
+		<category name="Coins and Blocks">
+			<attach sprite="483"/> <!-- Flip Block -->
+			<attach sprite="490"/> <!-- Event Block -->
+			<attach sprite="495-496"/> <!-- Message Block -->
+			<attach sprite="529"/> <!-- Song Block -->
+		</category>
+		<category name="Level Mechanics">
+			<attach sprite="484"/> <!-- Bone Platform -->
+			<attach sprite="488"/> <!-- Challenge Star -->
+			<attach sprite="514"/> <!-- Newer Special Exit -->
+			<attach sprite="531"/> <!-- Special Event -->
+		</category>
+	</view>
+	<view name="Events and Special">
+		<category name="Main Event Controllers">
+			<attach sprite="530"/> <!-- Event Looper -->
+		</category>
+		<category name="Event Controllable Objects">
+			<attach sprite="531"/> <!-- Special Event -->
+		</category>
+		<category name="Lighting">
+			<attach sprite="529"/> <!-- Song Block -->
+		</category>
+		<category name="Bonus Stage Stuff">
+			<attach sprite="488"/> <!-- Challenge Star -->
+			<attach sprite="528-529"/> <!-- Sing Along -->
+		</category>
+		<category name="Boss and Cutscene Controllers">
+			<attach sprite="515-523"/> <!-- Newer Bosses -->
+			<attach sprite="527"/> <!-- Newer Ending -->
+			<attach sprite="534"/> <!-- Newer Credits -->
+		</category>
+	</view>
+	<view name="Custom">
+		<category name="Custom">
+			<attach sprite="483-492"/>
+			<attach sprite="494-531"/>
+			<attach sprite="533-534"/>
+		</category>
+	</view>
+</views>

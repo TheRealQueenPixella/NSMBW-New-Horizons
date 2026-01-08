@@ -1,0 +1,91 @@
+<wiidisc version="1" shiftfiles="true" root="/NewHorizons" log="true">
+	<id game="SMN">
+		<region type="P"/>
+		<region type="E"/>
+		<region type="J"/>
+		<region type="K"/>
+		<region type="W"/>
+	</id>
+	<options>
+		<section name="NewHorizons">
+			<option name="Game" id="NewHorizons" default="1">
+				<choice name="Enabled"><patch id="NewHorizons"/></choice>
+			</option>
+		</section>
+	</options>
+	<patch id="NewHorizons">		
+		<!-- Vanilla folders, bar languages -->
+		<folder external="Effect" disc="/Effect" />
+		<folder external="Env" disc="/Env" />
+		<folder external="HomeButton2" disc="/HomeButton2" />
+		<folder external="Layout" disc="/Layout" create="true" />
+		<folder external="MovieDemo" disc="/MovieDemo" />
+		<folder external="Object" disc="/Object" create="true" />
+		<folder external="Replay/otakara" disc="/Replay/otakara" create="true" />
+		<folder external="Replay/otehon" disc="/Replay/otehon" create="true" />
+		<folder external="Replay/title" disc="/Replay/title" create="true" />
+		<folder external="Sound" disc="/Sound" create="true" />
+		<folder external="Sound/stream" disc="/Sound/stream" create="true" />
+		<folder external="Sound/sfx" disc="/Sound/new/sfx" create="true" />
+		<folder external="Stage" disc="/Stage" create="true" />
+		<folder external="Stage/Texture" disc="/Stage/Texture" create="true" />
+		<folder external="WorldMap" disc="/WorldMap" create="true" />
+		
+		<!-- Languages -->
+		<!-- If you want to use a single language for all versions of the game, use the Others folder -->
+		<folder external="Language/EU" disc="/EU" recursive="true" />
+		<folder external="Language/JP" disc="/JP" recursive="true" />
+		<folder external="Language/KR" disc="/KR" recursive="true" />
+		<folder external="Language/TW" disc="/TW" recursive="true" />
+		<folder external="Language/US" disc="/US" recursive="true" />
+		
+		<!-- New folders & files -->
+		<folder external="Code" disc="/Code" create="true" />
+		<folder external="LevelSamples" disc="/LevelSamples" create="true" />
+		<folder external="Others" />
+		<folder external="Others/Others{$__region}" />
+		
+		<file external="AnimTiles.bin" disc="/AnimTiles.bin" create="true"/>
+		<file external="LevelInfo.bin" disc="/LevelInfo.bin" create="true"/>
+		<file external="Messages.bin" disc="/Messages.bin" create="true"/>
+		<file external="NewerStaffRoll.bin" disc="/NewerStaffRoll.bin" create="true"/>
+		<file external="RandTiles.bin" disc="/RandTiles.bin" create="true"/>
+		
+		<!-- Not actually changed, just here for ease of access -->
+
+		
+		<!-- Save name change -->
+		<!-- EU -->    <memory offset="0x802F148C" value="4E6577486F7257" original="7769696D6A3264" />
+		<!-- US -->    <memory offset="0x802F118C" value="4E6577486F7257" original="7769696D6A3264" />
+		<!-- JP -->    <memory offset="0x802F0FAC" value="4E6577486F7257" original="7769696D6A3264" />
+		<!-- KR/TW --> <memory offset="0x802F17CC" value="4E6577486F7257" original="7769696D6A3264" />
+
+		<!-- Expand ArchiveHeap -->
+		<!-- EU -->    <memory offset="0x800E4A84" value="3C600140" original="3C600120" />
+		<!-- US -->    <memory offset="0x800E4994" value="3C600140" original="3C600120" />
+		<!-- JP -->    <memory offset="0x800E4914" value="3C600140" original="3C600120" />
+		<!-- KR/TW --> <memory offset="0x800E4AA4" value="3C600140" original="3C600120" />
+
+		<!-- Expand 2DHeap -->
+		<!-- EU -->    <memory offset="0x800B64EC" value="3C800032" original="3C800030" />
+		<!-- US -->    <memory offset="0x800B649C" value="3C800032" original="3C800030" />
+		<!-- JP -->    <memory offset="0x800B641C" value="3C800032" original="3C800030" />
+		<!-- KR/TW --> <memory offset="0x800B65AC" value="3C800032" original="3C800030" />
+
+		<!-- Disable debug key sequence -->
+		<!-- EU -->    <memory offset="0x800E4E84" value="38600000" original="3863330C" />
+		<!-- US -->    <memory offset="0x800E4D70" value="38600000" original="3863300C" />
+		<!-- JP -->    <memory offset="0x800E4CF0" value="38600000" original="38632E2C" />
+		<!-- KR/TW --> <memory offset="0x800E4E80" value="38600000" original="3863364C" />
+		
+		<!-- Disable unnecessary exception info -->
+		<!-- EU -->    <memory offset="0x800E4E8C" value="38600021" original="3860003F" />
+		<!-- US -->    <memory offset="0x800E4D78" value="38600021" original="3860003F" />
+		<!-- JP -->    <memory offset="0x800E4CF8" value="38600021" original="3860003F" />
+		<!-- KR/TW --> <memory offset="0x800E4E88" value="38600021" original="3860003F" />
+
+		<!-- Common -->
+		<memory offset="0x800046F0" valuefile="Loader.bin" />
+		<memory offset="0x8000406C" value="48000684" original="38000000" />		
+	</patch>
+</wiidisc>

@@ -4,7 +4,7 @@
         <random range="0x15, 0x18" direction="none" />
         <random range="0xFA, 0xFF" values="0x0, 0x1, 0x2, 0x3, 0x4, 0x5" direction="vertical" />
     </group>
-    <group names="Pa1_chika, Pa1_obake_chika, Pa1_setsugen, Pa1_shiro, Pa1_suichu, Pa1_daishizen, Pa1_daishizen_glow, Pa1_sabaku_chika, Pa1_hazy, Pa1_nohara2, Pa1_kurayami_chika, Pa1_shiro_yogan, Pa1_koopa_out, Pa1_shiro_koopa, Pa1_gake_yougan, Pa2_doukutu, Pa2_doukutu2, Pa2_doukutu3, Pa2_doukutu4, Pa2_doukutu5, Pa2_doukutu6, Pa2_doukutu8, ghostrocks, Pa1_daishizenkuri, Pa1_darkmtmush, Pa1_e3setsugen, Pa2_darkcave, Pa3_autumnbg, Pa2_volcanobg, Pa1_mushcastle, Pa1_pumpkin">
+    <group names="Pa1_chika, Pa1_obake_chika, Pa1_setsugen, Pa1_shiro, Pa1_suichu, Pa1_daishizen, Pa1_daishizen_glow, Pa1_daishizen_vanilla, Pa1_sabaku_chika, Pa1_hazy, Pa1_nohara2, Pa1_kurayami_chika, Pa1_shiro_yogan, Pa1_koopa_out, Pa1_shiro_koopa, Pa1_gake_yougan, Pa2_doukutu, Pa2_doukutu2, Pa2_doukutu3, Pa2_doukutu4, Pa2_doukutu5, Pa2_doukutu6, Pa2_doukutu8, ghostrocks, Pa1_daishizenkuri, Pa1_darkmtmush, Pa1_e3setsugen, Pa2_darkcave, Pa3_autumnbg, Pa2_volcanobg, Pa1_mushcastle, Pa1_pumpkin">
         <random list="0x10" values="0x10, 0x20, 0x30, 0x40" direction="vertical" />
         <random list="0x20" values="0x10, 0x20, 0x30, 0x40" direction="vertical" />
         <random list="0x30" values="0x10, 0x20, 0x30, 0x40" direction="vertical" />

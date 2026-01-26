@@ -43,7 +43,6 @@
 		<folder external="Code" disc="/Code" create="true" />
 		<folder external="LevelSamples" disc="/LevelSamples" create="true" />
 		<folder external="Others" />
-		<folder external="Others/Others{$__region}" />
 		
 		<file external="AnimTiles.bin" disc="/AnimTiles.bin" create="true"/>
 		<file external="LevelInfo.bin" disc="/LevelInfo.bin" create="true"/>

@@ -27,6 +27,18 @@
       <level file="03-35" name="Lakeside Ambush" />
    </category>
 
+   <category name="World C - Forsaken Reveries">
+      <level file="04-01" name="Gelato Lake" />
+      <level file="04-02" name="Shifting Sand Coast" />
+      <level file="04-03" name="Haunted Boardwalk" />
+      <level file="04-04" name="Stormy Shipwreck" />
+      <level file="04-22" name="Flip Block Tower" />
+      <level file="04-26" name="1UP Dash" />
+      <level file="04-33" name="Glacier Ambush" />
+      <level file="04-34" name="Oasis Ambush" />
+      <level file="04-35" name="Pier Ambush" />
+   </category>
+
    <category name="World 1 - Forested Ruins">
       <level file="05-01" name="Stone Pillar Woods" />
       <level file="05-02" name="Stone Gear Ruins" />
@@ -69,11 +81,12 @@
       <level file="07-02" name="Misty Meadows" />
       <level file="07-03" name="Blazing Shores" />
       <level file="07-22" name="Snowy Ash Tower" />
-      <level file="07-21" name="Sugar Highway" />
-      <level file="07-04" name="Fallout Wastelands" />
+      <level file="07-07" name="Sugar Highway" />
+      <level file="07-04" name="Palm Tree Cavern" />
       <level file="07-05" name="Tangled Grotto" />
       <level file="07-06" name="Beanstalk Ruins" />
       <level file="07-24" name="World 7-Castle" />
+	  <level file="07-36" name="Oneiric Cannon" />
       <level file="07-26" name="Toad House - 1UP Blast" />
       <level file="07-27" name="Toad House - Powerup Panels" />
       <level file="07-28" name="Toad House - Star Chest (1)" />
@@ -102,26 +115,17 @@
       <level file="08-35" name="Podoboo Ambush 3" />
    </category>
 
-   <category name="World 9">
-      <level file="09-01" name="World 9-1" />
-      <level file="09-02" name="World 9-2" />
-      <level file="09-03" name="World 9-3" />
-      <level file="09-04" name="World 9-4" />
-      <level file="09-05" name="World 9-5" />
-      <level file="09-06" name="World 9-6" />
-      <level file="09-07" name="World 9-7" />
-      <level file="09-08" name="World 9-8" />
-      <level file="09-26" name="Toad House - 1UP Blast" />
-      <level file="09-27" name="Toad House - Powerup Panels" />
-      <level file="09-28" name="Toad House - Star Chest" />
-   </category>
-
-   <category name="Coin Battle">
-      <level file="01-20" name="Coin Battle 1" />
-      <level file="02-20" name="Coin Battle 2" />
-      <level file="03-20" name="Coin Battle 3" />
-      <level file="04-20" name="Coin Battle 4" />
-      <level file="05-20" name="Coin Battle 5" />
+   <category name="World 5 - Special World">
+      <level file="09-01" name="Forested Ruins" />
+      <level file="09-02" name="Lost Woods" />
+      <level file="09-03" name="Sunrise Fortress" />
+      <level file="09-04" name="Dawn Complex" />
+      <level file="09-05" name="Oneiric Highlands" />
+      <level file="09-06" name="Forsaken Reveries" />
+      <level file="09-07" name="Ghost Valley" />
+      <level file="09-26" name="Mystery House" />
+      <level file="09-08" name="Castle Boss Rush" />
+      <level file="09-09" name="The Grand Finale" />
    </category>
 
    <category name="Other">

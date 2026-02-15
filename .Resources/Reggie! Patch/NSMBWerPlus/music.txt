@@ -7,7 +7,7 @@
 6:Pyramids [NSMBW]
 7:Snow [NSMBW]
 8:Lava [NSMBW]
-9:Opening Cutscene
+9:Tower [NSMBW]
 10:DO NOT USE Castle [NSMBW]
 11:Airship [NSMBW]
 12:Bonus Area [NSMBW]
@@ -39,11 +39,11 @@
 110:Desert
 111:Fire
 112:Silent Forest [NH]
-113:Freezeflame
-114:Japan
+113:Rosalina Ice World [NH]
+114:Special Overworld [NH]
 115:Pumpkin
-116:Sewer
-117:Space
+116:Stormy Shipwreck [NH]
+117:Sugar Lane [NH]
 118:Bowser
 119:Bonus
 120:Ambush

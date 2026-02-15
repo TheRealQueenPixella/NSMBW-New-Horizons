@@ -13,7 +13,6 @@
 			<tileset filename="Pa1_sabaku" name="Desert" />
 			<tileset filename="Pa1_daishizen" name="Forest" override="Forest Flowers" />
 			<tileset filename="Pa1_nohara" name="Grassland" override="Flowers" />
-			<tileset filename="Pa1_evil_nohara" name="Grassland (Nighmare)" override="Flowers" />
 			<tileset filename="Pa1_gake" name="Mountains" />
 			<tileset filename="Pa1_gake_yougan" name="Mountains (Lava)" />
 			<tileset filename="Pa1_nohara2" name="Sky" override="Flowers" />
@@ -24,14 +23,12 @@
 			<tileset filename="Pa1_dokan_naibu" name="Sewer" />
 			<tileset filename="Pa1_chika" name="Underground" />
 			<tileset filename="Pa1_sabaku_chika" name="Underground (Desert)" />
-                        <tileset filename="Pa1_hazy" name="Underground (Hazy Maze Cave)" />
 			<tileset filename="Pa1_korichika" name="Underground (Icy)" />
 			<tileset filename="Pa1_kurayami_chika" name="Underground (Water)" />
 			<tileset filename="Pa1_suichu" name="Underwater" />
 		</category>
 		<category name="Tower" sorted="true">
 			<tileset filename="Pa1_toride" name="Tower" />
-			<tileset filename="Pa2_ruins" name="Tower (Ruins)" />
 			<tileset filename="Pa1_toride_sabaku" name="Tower (Desert)" />
 			<tileset filename="Pa1_toride_kori" name="Tower (Ice)" />
 			<tileset filename="Pa1_toride_yogan" name="Tower (Lava)" />
@@ -62,10 +59,25 @@
 			<tileset filename="Pa1_obake" name="Ghost House Interior" />
 			<tileset filename="Pa1_obake_soto" name="Ghost House Exterior" />
 		</category>
-		<category name="Minigame/Other">
+		<category name="Other/Custom">
 			<tileset filename="Pa1_KinokoHouse" name="Toad House Lobby" />
 			<tileset filename="Pa1_MG_house" name="Toad House Interior" />
 			<tileset filename="Pa1_peach_castle" name="Peach's Castle" />
+			<tileset filename="Pa1_boardwalk" name="Boardwalk" />
+			<tileset filename="Pa1_daishizen_glow" name="Glow Forest" />
+			<tileset filename="Pa1_daishizen_vanilla" name="Vanilla Forest" />
+			<tileset filename="Pa1_evil_kaigan" name="Blazing Shores" />
+			<tileset filename="Pa1_evil_nohara" name="Nightmare Hills" />
+			<tileset filename="Pa1_hazy" name="Cavern (Hazy Maze Cave)" />
+			<tileset filename="Pa1_hikousen_broken" name="Airship (Broken)" />
+			<tileset filename="Pa1_obake_chika" name="Ghost Cave" />
+			<tileset filename="Pa1_sabaku_blue" name="Blue Desert" />
+			<tileset filename="Pa1_Sugar" name="Sugar Highway" />
+			<tileset filename="Pa2_airship_bg" name="Background Airship" />
+			<tileset filename="Pa2_castle_bg" name="Castle Background" />
+			<tileset filename="Pa2_ruins" name="Ruins" />
+			<tileset filename="Pa2_ruins_bg" name="Ruins Background" />
+			<tileset filename="Pa2_toride_bg" name="Tower Background" />
 		</category>
 	</slot>
 	<slot num="2">
@@ -85,8 +97,6 @@
 			<tileset filename="Pa2_hikousen2" name="Airship (Red)" />
 		</category>
 		<category name="Other">
-			<tileset filename="Pa2_ruins_bg" name="Castle Background (Black)" />
-			<tileset filename="Pa2_toride_bg" name="Castle Background (Dark Green)" />
 			<tileset filename="Pa2_sora" name="Bonus" />
 			<tileset filename="Pa2_shiro_koopa" name="Final Boss" />
 			<tileset filename="Pa2_kori" name="Ice" />

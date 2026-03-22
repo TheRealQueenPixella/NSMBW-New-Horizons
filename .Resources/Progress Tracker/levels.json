@@ -45,7 +45,8 @@
     "id": "02-26",
     "name": "1UP Dash",
     "category": "World B - Dawn Complex",
-    "completed": false
+    "completed": false,
+    "completedBy": "me"
   },
   {
     "id": "03-01",
@@ -344,13 +345,15 @@
     "id": "06-36",
     "name": "Fortress Cannon",
     "category": "World 2 - Sunrise Fortress",
-    "completed": false
+    "completed": false,
+    "completedBy": "me"
   },
   {
     "id": "06-26",
     "name": "1UP Dash",
     "category": "World 2 - Sunrise Fortress",
-    "completed": false
+    "completed": false,
+    "completedBy": null
   },
   {
     "id": "06-27",
@@ -514,7 +517,8 @@
     "id": "08-22",
     "name": "4-Tower",
     "category": "World 4 - Ghost Valley",
-    "completed": false
+    "completed": false,
+    "completedBy": "collab"
   },
   {
     "id": "08-04",
@@ -561,7 +565,8 @@
     "id": "09-01",
     "name": "Forested Ruins",
     "category": "World 5 - Special World",
-    "completed": false
+    "completed": false,
+    "completedBy": null
   },
   {
     "id": "09-02",

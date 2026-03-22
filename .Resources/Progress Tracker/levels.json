@@ -1,0 +1,652 @@
+[
+  {
+    "id": "01-36",
+    "name": "Ruined Grounds",
+    "category": "World 0 - Volcano Valley",
+    "completed": true,
+    "completedBy": "collab"
+  },
+  {
+    "id": "02-01",
+    "name": "Perilous Construction",
+    "category": "World B - Dawn Complex",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "02-02",
+    "name": "Bullet Bill Heights",
+    "category": "World B - Dawn Complex",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "02-03",
+    "name": "Flowing Batallion",
+    "category": "World B - Dawn Complex",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "02-04",
+    "name": "Sandstone Factory",
+    "category": "World B - Dawn Complex",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "02-22",
+    "name": "Rising Stronghold",
+    "category": "World B - Dawn Complex",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "02-26",
+    "name": "1UP Dash",
+    "category": "World B - Dawn Complex",
+    "completed": false
+  },
+  {
+    "id": "03-01",
+    "name": "Treetop Peaks",
+    "category": "World A - Lost Woods",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "03-02",
+    "name": "Toxic Bridges",
+    "category": "World A - Lost Woods",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "03-03",
+    "name": "Icicle Crypt",
+    "category": "World A - Lost Woods",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "03-04",
+    "name": "Midnight Mangrove",
+    "category": "World A - Lost Woods",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "03-22",
+    "name": "Buried Maze",
+    "category": "World A - Lost Woods",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "03-27",
+    "name": "Mystery House",
+    "category": "World A - Lost Woods",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "03-33",
+    "name": "Ruins Ambush",
+    "category": "World A - Lost Woods",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "03-34",
+    "name": "Lagoon Ambush",
+    "category": "World A - Lost Woods",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "03-35",
+    "name": "Lakeside Ambush",
+    "category": "World A - Lost Woods",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "04-01",
+    "name": "Gelato Lake",
+    "category": "World C - Forsaken Reveries",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "04-02",
+    "name": "Shifting Sand Coast",
+    "category": "World C - Forsaken Reveries",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "04-03",
+    "name": "Haunted Boardwalk",
+    "category": "World C - Forsaken Reveries",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "04-04",
+    "name": "Stormy Shipwreck",
+    "category": "World C - Forsaken Reveries",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "04-22",
+    "name": "Flip Block Tower",
+    "category": "World C - Forsaken Reveries",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "04-26",
+    "name": "1UP Dash",
+    "category": "World C - Forsaken Reveries",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "04-33",
+    "name": "Glacier Ambush",
+    "category": "World C - Forsaken Reveries",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "04-34",
+    "name": "Oasis Ambush",
+    "category": "World C - Forsaken Reveries",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "04-35",
+    "name": "Pier Ambush",
+    "category": "World C - Forsaken Reveries",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "05-01",
+    "name": "Stone Pillar Woods",
+    "category": "World 1 - Forested Ruins",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "05-02",
+    "name": "Stone Gear Ruins",
+    "category": "World 1 - Forested Ruins",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "05-03",
+    "name": "Poisonous Ride",
+    "category": "World 1 - Forested Ruins",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "05-22",
+    "name": "Inverted Tower",
+    "category": "World 1 - Forested Ruins",
+    "completed": false,
+    "completedBy": "collab"
+  },
+  {
+    "id": "05-04",
+    "name": "Piranha Plant Lake",
+    "category": "World 1 - Forested Ruins",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "05-06",
+    "name": "Ghostly Cavern",
+    "category": "World 1 - Forested Ruins",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "05-05",
+    "name": "Floating Temple",
+    "category": "World 1 - Forested Ruins",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "05-24",
+    "name": "Bullet Bill Shrine",
+    "category": "World 1 - Forested Ruins",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "05-36",
+    "name": "Forest Cannon",
+    "category": "World 1 - Forested Ruins",
+    "completed": false,
+    "completedBy": "me"
+  },
+  {
+    "id": "05-26",
+    "name": "1UP Dash",
+    "category": "World 1 - Forested Ruins",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "05-27",
+    "name": "Mystery House",
+    "category": "World 1 - Forested Ruins",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "05-28",
+    "name": "Item House",
+    "category": "World 1 - Forested Ruins",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "05-33",
+    "name": "River Ambush",
+    "category": "World 1 - Forested Ruins",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "05-34",
+    "name": "Ruins Ambush",
+    "category": "World 1 - Forested Ruins",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "05-35",
+    "name": "Prairie Ambush",
+    "category": "World 1 - Forested Ruins",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "06-01",
+    "name": "Cheep Cheep Pier",
+    "category": "World 2 - Sunrise Fortress",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "06-02",
+    "name": "Deep Dive Mine",
+    "category": "World 2 - Sunrise Fortress",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "06-03",
+    "name": "Bullet Bill Train",
+    "category": "World 2 - Sunrise Fortress",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "06-04",
+    "name": "Cliffside Defense",
+    "category": "World 2 - Sunrise Fortress",
+    "completed": false,
+    "completedBy": "collab"
+  },
+  {
+    "id": "06-22",
+    "name": "Scale Lift Tower",
+    "category": "World 2 - Sunrise Fortress",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "06-05",
+    "name": "Sky High Foundry",
+    "category": "World 2 - Sunrise Fortress",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "06-06",
+    "name": "Underground Docks",
+    "category": "World 2 - Sunrise Fortress",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "06-24",
+    "name": "Boiling Palace",
+    "category": "World 2 - Sunrise Fortress",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "06-38",
+    "name": "Surreal Flotilla",
+    "category": "World 2 - Sunrise Fortress",
+    "completed": false
+  },
+  {
+    "id": "06-36",
+    "name": "Fortress Cannon",
+    "category": "World 2 - Sunrise Fortress",
+    "completed": false
+  },
+  {
+    "id": "06-26",
+    "name": "1UP Dash",
+    "category": "World 2 - Sunrise Fortress",
+    "completed": false
+  },
+  {
+    "id": "06-27",
+    "name": "Mystery House",
+    "category": "World 2 - Sunrise Fortress",
+    "completed": false
+  },
+  {
+    "id": "06-28",
+    "name": "Item House",
+    "category": "World 2 - Sunrise Fortress",
+    "completed": false
+  },
+  {
+    "id": "06-33",
+    "name": "Doomship Ambush",
+    "category": "World 2 - Sunrise Fortress",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "06-34",
+    "name": "Train Ambush",
+    "category": "World 2 - Sunrise Fortress",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "06-35",
+    "name": "Fortress Ambush",
+    "category": "World 2 - Sunrise Fortress",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "07-01",
+    "name": "Sandstorm Wilds",
+    "category": "World 3 - Oneiric Highlands",
+    "completed": false,
+    "completedBy": "collab"
+  },
+  {
+    "id": "07-02",
+    "name": "Misty Meadows",
+    "category": "World 3 - Oneiric Highlands",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "07-03",
+    "name": "Blazing Shores",
+    "category": "World 3 - Oneiric Highlands",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "07-22",
+    "name": "Snowy Ash Tower",
+    "category": "World 3 - Oneiric Highlands",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "07-07",
+    "name": "Sugar Highway",
+    "category": "World 3 - Oneiric Highlands",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "07-04",
+    "name": "Palm Tree Cavern",
+    "category": "World 3 - Oneiric Highlands",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "07-05",
+    "name": "Tangled Grotto",
+    "category": "World 3 - Oneiric Highlands",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "07-06",
+    "name": "Beanstalk Ruins",
+    "category": "World 3 - Oneiric Highlands",
+    "completed": false,
+    "completedBy": "collab"
+  },
+  {
+    "id": "07-24",
+    "name": "World 7-Castle",
+    "category": "World 3 - Oneiric Highlands",
+    "completed": false
+  },
+  {
+    "id": "07-36",
+    "name": "Oneiric Cannon",
+    "category": "World 3 - Oneiric Highlands",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "07-26",
+    "name": "1UP Dash",
+    "category": "World 3 - Oneiric Highlands",
+    "completed": false
+  },
+  {
+    "id": "07-27",
+    "name": "Mystery House",
+    "category": "World 3 - Oneiric Highlands",
+    "completed": false
+  },
+  {
+    "id": "07-28",
+    "name": "Item House",
+    "category": "World 3 - Oneiric Highlands",
+    "completed": false
+  },
+  {
+    "id": "07-33",
+    "name": "Candy Ambush",
+    "category": "World 3 - Oneiric Highlands",
+    "completed": false
+  },
+  {
+    "id": "07-34",
+    "name": "Chasm Ambush",
+    "category": "World 3 - Oneiric Highlands",
+    "completed": false
+  },
+  {
+    "id": "07-35",
+    "name": "Fiery Ambush",
+    "category": "World 3 - Oneiric Highlands",
+    "completed": false
+  },
+  {
+    "id": "08-01",
+    "name": "Poisonous Pipeyard",
+    "category": "World 4 - Ghost Valley",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "08-02",
+    "name": "Spirited Citadel",
+    "category": "World 4 - Ghost Valley",
+    "completed": false
+  },
+  {
+    "id": "08-03",
+    "name": "Fiery Pit",
+    "category": "World 4 - Ghost Valley",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "08-22",
+    "name": "4-Tower",
+    "category": "World 4 - Ghost Valley",
+    "completed": false
+  },
+  {
+    "id": "08-04",
+    "name": "Lost Galleon",
+    "category": "World 4 - Ghost Valley",
+    "completed": false,
+    "completedBy": "collab"
+  },
+  {
+    "id": "08-05",
+    "name": "Gusty Heights",
+    "category": "World 4 - Ghost Valley",
+    "completed": false,
+    "completedBy": "collab"
+  },
+  {
+    "id": "08-06",
+    "name": "Sinking Manor",
+    "category": "World 4 - Ghost Valley",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "08-07",
+    "name": "Stone-Eye Swamp",
+    "category": "World 4 - Ghost Valley",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "08-38",
+    "name": "Last Showdown with Jr.",
+    "category": "World 4 - Ghost Valley",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "08-24",
+    "name": "Dry Bowser's Castle",
+    "category": "World 4 - Ghost Valley",
+    "completed": false
+  },
+  {
+    "id": "09-01",
+    "name": "Forested Ruins",
+    "category": "World 5 - Special World",
+    "completed": false
+  },
+  {
+    "id": "09-02",
+    "name": "Lost Woods",
+    "category": "World 5 - Special World",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "09-03",
+    "name": "Sunrise Fortress",
+    "category": "World 5 - Special World",
+    "completed": false
+  },
+  {
+    "id": "09-04",
+    "name": "Dawn Complex",
+    "category": "World 5 - Special World",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "09-05",
+    "name": "Oneiric Highlands",
+    "category": "World 5 - Special World",
+    "completed": false
+  },
+  {
+    "id": "09-06",
+    "name": "Forsaken Reveries",
+    "category": "World 5 - Special World",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "09-07",
+    "name": "Ghost Valley",
+    "category": "World 5 - Special World",
+    "completed": false
+  },
+  {
+    "id": "09-26",
+    "name": "Mystery House",
+    "category": "World 5 - Special World",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "09-08",
+    "name": "Castle Boss Rush",
+    "category": "World 5 - Special World",
+    "completed": false
+  },
+  {
+    "id": "09-09",
+    "name": "The Grand Finale",
+    "category": "World 5 - Special World",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "01-41",
+    "name": "Crash Site",
+    "category": "Other/Unused",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "04-38",
+    "name": "4-Airship",
+    "category": "Other/Unused",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "01-40",
+    "name": "Titlescreen",
+    "category": "Other/Unused",
+    "completed": true,
+    "completedBy": "me"
+  },
+  {
+    "id": "01-42",
+    "name": "Credits",
+    "category": "Other/Unused",
+    "completed": false
+  }
+]

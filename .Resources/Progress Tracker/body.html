@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>New Super Mario Bros. Wii: New Horizons Progress Tracker</title>
+<style>
+body { background:#1e1e1e; color:white; font-family:Verdana; padding:20px; }
+h1 { text-align:center; margin-bottom:10px; }
+#progress { text-align:center; margin-bottom:20px; font-size:16px; }
+.category { margin-bottom:30px; }
+.category h2 { border-bottom:2px solid #555; padding-bottom:5px; margin-bottom:15px; font-size:18px; display:flex; justify-content:space-between; }
+.world-counter { color:#aaa; }
+.world-counter.complete { color:yellow; }
+.level-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:15px; }
+.level { background:#2a2a2a; border:2px solid #555; border-radius:12px; padding:10px; text-align:center; cursor:pointer; }
+.level-name { font-size:14px; margin-bottom:8px; }
+.star-coins { display:flex; justify-content:center; gap:4px; margin-bottom:5px; }
+.star { width:20px; height:20px; opacity:0.3; background-size:contain; background-repeat:no-repeat; }
+.star.gold { opacity:1; background-color:gold; border-radius:50%; }
+.star.purple { opacity:1; background-color:purple; border-radius:50%; }
+.collab-btn { font-size:12px; padding:3px 6px; background:purple; color:white; border:none; border-radius:5px; cursor:pointer; }
+#saveBtn,#resetBtn { margin-top:20px; padding:10px; border:none; border-radius:8px; color:white; }
+#saveBtn { background:green; } #resetBtn { background:red; margin-left:10px; }
+</style>
+</head>
+<body>
+
+<h1>New Super Mario Bros. Wii: New Horizons Progress Tracker</h1>
+
+<label style="display:block; text-align:center; margin-bottom:10px;">
+<input type="checkbox" id="mainToggle"> Show only main levels
+</label>
+
+<div id="progress"></div>
+<div id="categories"></div>
+<button id="saveBtn">Export JSON</button>
+<button id="resetBtn">Reset Progress</button>
+
+<script>
+// -------- Variables --------
+const STORAGE_KEY = "nsmbwii-progress";
+let levelsData = [];
+
+// -------- Helpers --------
+function isMainLevel(id){
+  const n = parseInt(id.split('-')[1]);
+  // Main levels: XX-01 to XX-09, XX-22, XX-24, XX-38 (airships)
+  return (n >= 1 && n <= 9) || n === 22 || n === 24 || n === 38;
+}
+
+function saveData(){ localStorage.setItem(STORAGE_KEY, JSON.stringify(levelsData)); }
+
+function updateProgress(){
+  const totalAll = levelsData.length;
+  const totalMain = levelsData.filter(l=>isMainLevel(l.id)).length;
+  const meAll = levelsData.filter(l=>l.completedBy==='me').length;
+  const collabAll = levelsData.filter(l=>l.completedBy==='collab').length;
+  const doneAll = levelsData.filter(l=>l.completedBy).length;
+  const meMain = levelsData.filter(l=>l.completedBy==='me'&&isMainLevel(l.id)).length;
+  const collabMain = levelsData.filter(l=>l.completedBy==='collab'&&isMainLevel(l.id)).length;
+  const doneMain = levelsData.filter(l=>l.completedBy&&isMainLevel(l.id)).length;
+  document.getElementById('progress').innerHTML =
+    `Main → Me ${meMain}/${totalMain} | Collab ${collabMain}/${totalMain} | Total ${doneMain}/${totalMain}<br>
+     All → Me ${meAll}/${totalAll} | Collab ${collabAll}/${totalAll} | Total ${doneAll}/${totalAll}`;
+}
+
+function updateWorldCounters(){
+  const showMain = document.getElementById('mainToggle').checked;
+  document.querySelectorAll('.category').forEach(cat=>{
+    const levels = Array.from(cat.querySelectorAll('.level')).filter(l=>!showMain||l.dataset.main==='true');
+    const done = levels.filter(l=>l.dataset.completed).length;
+    const counter = cat.querySelector('.world-counter');
+    counter.textContent = `${done}/${levels.length}`;
+    counter.classList.toggle('complete', done===levels.length && levels.length>0);
+  });
+}
+
+function applyFilter(){
+  const showMain = document.getElementById('mainToggle').checked;
+  document.querySelectorAll('.level').forEach(level=>{
+    level.style.display = (!showMain||level.dataset.main==='true') ? '' : 'none';
+  });
+  updateWorldCounters();
+}
+
+// -------- Render Levels --------
+function renderLevels(){
+  const container = document.getElementById('categories');
+  container.innerHTML = "";
+  const categories = {};
+  levelsData.forEach(l=>{ if(!categories[l.category]) categories[l.category]=[]; categories[l.category].push(l); });
+  Object.keys(categories).forEach(name=>{
+    const catDiv = document.createElement('div'); catDiv.className='category';
+    const h2 = document.createElement('h2'); h2.textContent=name;
+    const counter = document.createElement('span'); counter.className='world-counter'; h2.appendChild(counter);
+    const grid = document.createElement('div'); grid.className='level-grid';
+    categories[name].forEach(level=>{
+      const div = document.createElement('div'); div.className='level';
+      div.dataset.main = isMainLevel(level.id); div.dataset.completed = level.completedBy||'';
+      const title = document.createElement('div'); title.className='level-name'; title.textContent = level.name;
+      const stars = document.createElement('div'); stars.className='star-coins';
+      function renderStar(){ stars.innerHTML=''; for(let i=0;i<3;i++){ const s=document.createElement('div'); s.className='star'; if(level.completedBy==='me') s.classList.add('gold'); if(level.completedBy==='collab') s.classList.add('purple'); stars.appendChild(s); } }
+      renderStar();
+      div.onclick = ()=>{
+        level.completedBy = level.completedBy==='me'?null:'me';
+        div.dataset.completed = level.completedBy||'';
+        renderStar(); updateProgress(); updateWorldCounters(); saveData();
+      };
+      const btn = document.createElement('button'); btn.className='collab-btn'; btn.textContent='Collaborator';
+      btn.onclick = e => {
+        e.stopPropagation(); level.completedBy = level.completedBy==='collab'?null:'collab';
+        div.dataset.completed = level.completedBy||''; renderStar(); updateProgress(); updateWorldCounters(); saveData();
+      };
+      div.append(title, stars, btn); grid.appendChild(div);
+    });
+    catDiv.append(h2, grid); container.appendChild(catDiv);
+  });
+  updateProgress(); updateWorldCounters();
+}
+
+// -------- Load Initial Data --------
+function loadInitialData(){
+  const local = localStorage.getItem(STORAGE_KEY);
+  if(local){ levelsData = JSON.parse(local); renderLevels(); }
+  else { fetch('levels.json').then(r=>r.json()).then(data=>{ levelsData = data; renderLevels(); saveData(); }); }
+}
+
+// -------- Init --------
+loadInitialData();
+document.getElementById('mainToggle').onchange = applyFilter;
+document.getElementById('saveBtn').onclick = ()=>{
+  const blob = new Blob([JSON.stringify(levelsData,null,2)]);
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'levels_updated.json'; a.click();
+};
+document.getElementById('resetBtn').onclick = ()=>{
+  if(confirm("Reset all progress?")){ localStorage.removeItem(STORAGE_KEY); levelsData.forEach(l=>l.completedBy=null); renderLevels(); saveData(); }
+};
+</script>
+</body>
+</html>

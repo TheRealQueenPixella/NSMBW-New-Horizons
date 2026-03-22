@@ -3,49 +3,42 @@
     "id": "01-36",
     "name": "Ruined Grounds",
     "category": "World 0 - Volcano Valley",
-    "completed": true,
     "completedBy": "collab"
   },
   {
     "id": "02-01",
     "name": "Perilous Construction",
     "category": "World B - Dawn Complex",
-    "completed": true,
     "completedBy": "me"
   },
   {
     "id": "02-02",
     "name": "Bullet Bill Heights",
     "category": "World B - Dawn Complex",
-    "completed": true,
     "completedBy": "me"
   },
   {
     "id": "02-03",
     "name": "Flowing Batallion",
     "category": "World B - Dawn Complex",
-    "completed": true,
     "completedBy": "me"
   },
   {
     "id": "02-04",
     "name": "Sandstone Factory",
     "category": "World B - Dawn Complex",
-    "completed": true,
     "completedBy": "me"
   },
   {
     "id": "02-22",
     "name": "Rising Stronghold",
     "category": "World B - Dawn Complex",
-    "completed": true,
     "completedBy": "me"
   },
   {
     "id": "02-26",
     "name": "1UP Dash",
     "category": "World B - Dawn Complex",
-    "completed": false,
     "completedBy": "me"
   },
   {
@@ -345,7 +338,7 @@
     "id": "06-36",
     "name": "Fortress Cannon",
     "category": "World 2 - Sunrise Fortress",
-    "completed": false,
+    "completed": true,
     "completedBy": "me"
   },
   {
@@ -353,7 +346,7 @@
     "name": "1UP Dash",
     "category": "World 2 - Sunrise Fortress",
     "completed": false,
-    "completedBy": null
+    "completedBy": "me"
   },
   {
     "id": "06-27",
@@ -461,7 +454,8 @@
     "id": "07-26",
     "name": "1UP Dash",
     "category": "World 3 - Oneiric Highlands",
-    "completed": false
+    "completed": false,
+    "completedBy": null
   },
   {
     "id": "07-27",

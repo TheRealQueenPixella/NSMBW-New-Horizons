@@ -6,4 +6,4 @@ REM Wait a second to let the server start
 timeout /t 1 /nobreak > nul
 
 REM Open the default browser to localhost:8000
-start "" http://localhost:8000/body.html
+start "" http://localhost:8000/index.html

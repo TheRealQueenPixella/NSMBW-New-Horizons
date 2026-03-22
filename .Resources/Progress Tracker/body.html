@@ -23,9 +23,10 @@ h1 { text-align:center; margin-bottom:10px; }
 .star.gold { opacity:1; background:gold; border-radius:50%; }
 .star.purple { opacity:1; background:purple; border-radius:50%; }
 .collab-btn { font-size:12px; padding:3px 6px; background:purple; color:white; border:none; border-radius:5px; cursor:pointer; }
-#saveBtn,#resetBtn { margin-top:20px; padding:10px; border:none; border-radius:8px; color:white; }
+#saveBtn,#resetBtn,#loadBtn { margin-top:20px; padding:10px; border:none; border-radius:8px; color:white; }
 #saveBtn { background:green; }
 #resetBtn { background:red; margin-left:10px; }
+#loadBtn { background:#0077cc; margin-left:10px; }
 </style>
 </head>
 <body>
@@ -44,12 +45,15 @@ h1 { text-align:center; margin-bottom:10px; }
 
 <button id="saveBtn">Download Updated levels.json</button>
 <button id="resetBtn">Reset Progress</button>
+<button id="loadBtn">Load levels.json</button>
+
+<input type="file" id="fileInput" accept=".json" style="display:none">
 
 <script>
 const STORAGE_KEY = "nsmbwii-progress";
 let levelsData = [];
 let hasUnsavedChanges = false;
-let changeCounter = 0;
+let warnedThisSession = false;
 
 // -------- Helpers --------
 function isMainLevel(id){
@@ -69,22 +73,21 @@ function setUnsaved(state){
   }
 }
 
-function markChanged(){
-  changeCounter++;
-  setUnsaved(true);
-
-  if(changeCounter >= 10){
-    alert("⚠️ You made several changes.\nDon't forget to export your updated levels.json!");
-    changeCounter = 0;
-  }
-}
-
 window.addEventListener("beforeunload", function (e) {
   if (hasUnsavedChanges) {
     e.preventDefault();
     e.returnValue = '';
   }
 });
+
+function markChanged(){
+  setUnsaved(true);
+
+  if(!warnedThisSession){
+    alert("⚠️ Don't forget to export your updated levels.json!");
+    warnedThisSession = true;
+  }
+}
 
 function saveData(){
   localStorage.setItem(STORAGE_KEY, JSON.stringify(levelsData));
@@ -218,7 +221,36 @@ function renderLevels(){
   updateWorldCounters();
 }
 
-// -------- Load --------
+// -------- Load JSON file --------
+document.getElementById('loadBtn').onclick = ()=>{
+  document.getElementById('fileInput').click();
+};
+
+document.getElementById('fileInput').addEventListener('change', function(event){
+  const file = event.target.files[0];
+  if(!file) return;
+
+  const reader = new FileReader();
+  reader.onload = function(e){
+    try {
+      const data = JSON.parse(e.target.result);
+
+      if(confirm("Load this file and overwrite current progress?")){
+        levelsData = data;
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(levelsData));
+        renderLevels();
+        setUnsaved(false);
+        warnedThisSession = false;
+      }
+    } catch(err){
+      alert("Invalid JSON file!");
+    }
+  };
+
+  reader.readAsText(file);
+});
+
+// -------- Load initial --------
 function loadInitialData(){
   const local = localStorage.getItem(STORAGE_KEY);
 
@@ -248,7 +280,7 @@ document.getElementById('saveBtn').onclick = ()=>{
 
   setUnsaved(false);
   updateLastSaved();
-  changeCounter = 0;
+  warnedThisSession = false;
 };
 
 document.getElementById('resetBtn').onclick = ()=>{

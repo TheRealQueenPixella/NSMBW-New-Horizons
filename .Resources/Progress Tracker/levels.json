@@ -309,13 +309,13 @@
     "id": "06-27",
     "name": "Mystery House",
     "category": "World 2 - Sunrise Fortress",
-    "completedBy": null
+    "completedBy": "me"
   },
   {
     "id": "06-28",
     "name": "Item House",
     "category": "World 2 - Sunrise Fortress",
-    "completedBy": null
+    "completedBy": "me"
   },
   {
     "id": "06-33",
@@ -399,19 +399,19 @@
     "id": "07-26",
     "name": "1UP Dash",
     "category": "World 3 - Oneiric Highlands",
-    "completedBy": null
+    "completedBy": "me"
   },
   {
     "id": "07-27",
     "name": "Mystery House",
     "category": "World 3 - Oneiric Highlands",
-    "completedBy": null
+    "completedBy": "me"
   },
   {
     "id": "07-28",
     "name": "Item House",
     "category": "World 3 - Oneiric Highlands",
-    "completedBy": null
+    "completedBy": "me"
   },
   {
     "id": "07-33",

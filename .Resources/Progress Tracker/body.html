@@ -23,10 +23,11 @@ h1 { text-align:center; margin-bottom:10px; }
 .star.gold { opacity:1; background:gold; border-radius:50%; }
 .star.purple { opacity:1; background:purple; border-radius:50%; }
 .collab-btn { font-size:12px; padding:3px 6px; background:purple; color:white; border:none; border-radius:5px; cursor:pointer; }
-#saveBtn,#resetBtn,#loadBtn { margin-top:20px; padding:10px; border:none; border-radius:8px; color:white; }
+#saveBtn,#resetBtn,#loadBtn,#filterIncompleteBtn { margin-top:20px; padding:10px; border:none; border-radius:8px; color:white; }
 #saveBtn { background:green; }
 #resetBtn { background:red; margin-left:10px; }
 #loadBtn { background:#0077cc; margin-left:10px; }
+#filterIncompleteBtn { background:orange; margin-left:10px; }
 </style>
 </head>
 <body>
@@ -39,6 +40,7 @@ h1 { text-align:center; margin-bottom:10px; }
 
 <label style="display:block; text-align:center; margin-bottom:10px;">
 <input type="checkbox" id="mainToggle"> Show only main levels
+<input type="checkbox" id="incompleteToggle"> Show only incomplete levels
 </label>
 
 <div id="categories"></div>
@@ -82,7 +84,6 @@ window.addEventListener("beforeunload", function (e) {
 
 function markChanged(){
   setUnsaved(true);
-
   if(!warnedThisSession){
     alert("⚠️ Don't forget to export your updated levels.json!");
     warnedThisSession = true;
@@ -112,10 +113,12 @@ function updateProgress(){
 
 function updateWorldCounters(){
   const showMain = document.getElementById('mainToggle').checked;
+  const showIncomplete = document.getElementById('incompleteToggle').checked;
 
   document.querySelectorAll('.category').forEach(cat=>{
     const levels = Array.from(cat.querySelectorAll('.level'))
-      .filter(l=>!showMain || l.dataset.main==='true');
+      .filter(l=>(!showMain || l.dataset.main==='true') &&
+                 (!showIncomplete || !l.dataset.completed));
 
     const done = levels.filter(l=>l.dataset.completed).length;
     const counter = cat.querySelector('.world-counter');
@@ -127,9 +130,12 @@ function updateWorldCounters(){
 
 function applyFilter(){
   const showMain = document.getElementById('mainToggle').checked;
+  const showIncomplete = document.getElementById('incompleteToggle').checked;
 
   document.querySelectorAll('.level').forEach(level=>{
-    level.style.display = (!showMain || level.dataset.main==='true') ? '' : 'none';
+    const visible = (!showMain || level.dataset.main==='true') &&
+                    (!showIncomplete || !level.dataset.completed);
+    level.style.display = visible ? '' : 'none';
   });
 
   updateWorldCounters();
@@ -270,6 +276,7 @@ function loadInitialData(){
 
 // -------- Buttons --------
 document.getElementById('mainToggle').onchange = applyFilter;
+document.getElementById('incompleteToggle').onchange = applyFilter;
 
 document.getElementById('saveBtn').onclick = ()=>{
   const blob = new Blob([JSON.stringify(levelsData,null,2)]);

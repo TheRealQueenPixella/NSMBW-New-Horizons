@@ -17,7 +17,7 @@
         <random range="0x22, 0x27" direction="horizontal" />
         <random range="0x12, 0x17" direction="both" />
     </group>
-    <group names="Pa1_nohara, Pa1_cracks, Pa1_springwater, Pa1_space, Pa1_chika2">
+    <group names="Pa1_nohara, Pa1_obake_nohara, Pa1_cracks, Pa1_springwater, Pa1_space, Pa1_chika2">
         <random list="0x10" values="0x10, 0x20, 0x30, 0x40" direction="vertical" />
         <random list="0x20" values="0x10, 0x20, 0x30, 0x40" direction="vertical" />
         <random list="0x30" values="0x10, 0x20, 0x30, 0x40" direction="vertical" />

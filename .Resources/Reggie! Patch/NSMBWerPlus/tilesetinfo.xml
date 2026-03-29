@@ -17,7 +17,7 @@
         <random range="0x22, 0x27" direction="horizontal" />
         <random range="0x12, 0x17" direction="both" />
     </group>
-    <group names="Pa1_nohara, Pa1_obake_nohara, Pa1_cracks, Pa1_springwater, Pa1_space, Pa1_chika2">
+    <group names="Pa1_nohara, Pa1_cracks, Pa1_springwater, Pa1_space, Pa1_chika2">
         <random list="0x10" values="0x10, 0x20, 0x30, 0x40" direction="vertical" />
         <random list="0x20" values="0x10, 0x20, 0x30, 0x40" direction="vertical" />
         <random list="0x30" values="0x10, 0x20, 0x30, 0x40" direction="vertical" />
@@ -40,6 +40,20 @@
         <random range="0xA, 0xF" direction="horizontal" />
         <random range="0x2A, 0x2F" direction="horizontal" />
         <random range="0x1A, 0x1F" direction="both" />
+    </group>
+    <group names=" Pa1_obake_nohara">
+        <random list="0x10" values="0x10, 0x20, 0x30, 0x40" direction="vertical" />
+        <random list="0x20" values="0x10, 0x20, 0x30, 0x40" direction="vertical" />
+        <random list="0x30" values="0x10, 0x20, 0x30, 0x40" direction="vertical" />
+        <random list="0x40" values="0x10, 0x20, 0x30, 0x40" direction="vertical" />
+        <random list="0x11" values="0x11, 0x21, 0x31, 0x41" direction="vertical" />
+        <random list="0x21" values="0x11, 0x21, 0x31, 0x41" direction="vertical" />
+        <random list="0x31" values="0x11, 0x21, 0x31, 0x41" direction="vertical" />
+        <random list="0x41" values="0x11, 0x21, 0x31, 0x41" direction="vertical" />
+        <random range="0x2, 0x7" direction="horizontal" />
+        <random range="0x22, 0x27" direction="horizontal" />
+        <random range="0x12, 0x17" direction="both" />
+        <random range="0x9, 0xE" direction="horizontal" />
     </group>
     <group names="Pa1_gake, Pa1_gake_nocoll, Pa1_Mountains">
         <random list="0x10" values="0x10, 0x20, 0x30, 0x40" direction="vertical" />

@@ -37,15 +37,15 @@
 108:Tower
 109:Hazy Maze Cave [NH]
 110:Desert
-111:Fire
+111:Grumble Volcano [NH]
 112:Silent Forest [NH]
 113:Rosalina Ice World [NH]
 114:Special Overworld [NH]
-115:Pumpkin
+115:Boo Lake[NH]
 116:Stormy Shipwreck [NH]
 117:Sugar Lane [NH]
 118:Bowser
-119:Bonus
+119:Bonus [NH]
 120:Ambush
 121:Bridge Drums
 122:Snow
@@ -53,9 +53,9 @@
 124:Cliffs
 125:Autumn
 126:Crystal Caves
-127:Graveyard
-128:Ghost House
-129:Jungle
+127:Ghost House
+128:Bonneton [NH]
+129:Piranha Plant Creek [NH]
 130:Tropical
 131:Blossom Haze [NH]
 132:Snow (2)

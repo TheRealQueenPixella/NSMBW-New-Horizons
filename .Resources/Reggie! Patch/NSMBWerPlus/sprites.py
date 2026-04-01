@@ -7,6 +7,7 @@ Qt = QtCore.Qt
 
 import spritelib as SLib
 import sprites_common as common
+import math
 
 ImageCache = SLib.ImageCache
 
@@ -2055,6 +2056,51 @@ class SpriteImage_NewerBigShell(SLib.SpriteImage_StaticMultiple):  # 341
         super().dataChanged()
 
 
+class SpriteImage_Muncher(SLib.SpriteImage_StaticMultiple):  # 342
+    @staticmethod
+    def loadImages():
+        SLib.loadIfNotInImageCache('Muncher', 'muncher.png')
+        SLib.loadIfNotInImageCache('MuncherF', 'muncher_frozen.png')
+
+    def dataChanged(self):
+        color = self.parent.spritedata[2] & 0xF0
+        gravity = self.parent.spritedata[2] & 0b11
+        wide_collision = self.parent.spritedata[2] & 0b100
+        big = self.parent.spritedata[2] & 0b1000
+        move_slightly_horizontally = (self.parent.spritedata[3] & 0b1000) >> 3
+        move_slightly_up = (self.parent.spritedata[3] & 0b100) >> 2
+        freezable = (self.parent.spritedata[3] & 0b10) >> 1
+        frozen = self.parent.spritedata[3] & 0b1
+        rotation = ((self.parent.spritedata[4] & 0xFF) << 8) + (self.parent.spritedata[5] & 0xFF)
+
+        img_rotation = QtGui.QTransform()
+        angle = rotation / 65520 * 360
+        img_rotation.rotate(angle)
+        angle -= 90
+        if angle < 0: angle += 360
+        x, y = math.cos(angle * math.pi / 180), math.sin(angle * math.pi / 180)
+
+        self.image = ImageCache['Muncher' + ('F' if frozen else '')]
+        if not big: self.image = self.image.scaled(QtCore.QSize(self.image.width() // 2, self.image.height() // 2))
+        dimension = QtCore.QSize(self.image.width(), self.image.height())
+
+        self.image = self.image.transformed(img_rotation)
+        diff = QtCore.QSize(self.image.width() - dimension.width(), self.image.height() - dimension.height())
+        self.image = self.image.copy(
+            diff.width() // 2,
+            diff.height() // 2,
+            self.image.width() - (diff.width() // 2),
+            self.image.height() - (diff.height() // 2)
+        )
+
+        self.offset = (
+            8 * x - int(move_slightly_horizontally) * x * 2 + (-8 + 8 * x if big else 0),
+            8 * y - int(move_slightly_up) * 4 + (16 * ((y - 1) / 2) if big else 0),
+        )
+
+        super().dataChanged()
+
+
 class SpriteImage_ShyGuy(SLib.SpriteImage_StaticMultiple):  # 351
     @staticmethod
     def loadImages():
@@ -2318,6 +2364,7 @@ ImageClasses = {
     308: SpriteImage_NewerHammerBroPlatform,
     311: SpriteImage_NewerMegaIcicle,
     341: SpriteImage_NewerBigShell,
+    342: SpriteImage_Muncher,
     387: SpriteImage_NewerBush,
     391: SpriteImage_NewerGlowBlock,
     402: SpriteImage_LineQBlock,

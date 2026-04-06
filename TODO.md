@@ -17,6 +17,7 @@
 - Turn 3-1 colored blocks into sandstones
 - Replace textures in the platform below 3-6
 - Make all mystery house/1UP Dash shadows squares instead of circles
-- Remove 4-5 Volcano<br/>
+- Remove 4-5 Volcano
+- Remake second half of 2-A<br/>
   ...<br/>
   ### Will add more as it comes out thanks to the playtesters

@@ -18,6 +18,7 @@
 - Replace textures in the platform below 3-6
 - Make all mystery house/1UP Dash shadows squares instead of circles
 - Remove 4-5 Volcano
-- Remake second half of 2-A<br/>
+- Remake second half of 2-A
+- Remove glare from final area of 3-6<br/>
   ...<br/>
   ### Will add more as it comes out thanks to the playtesters

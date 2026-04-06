@@ -19,6 +19,7 @@
 		<folder external="Env" disc="/Env" />
 		<folder external="HomeButton2" disc="/HomeButton2" />
 		<folder external="Layout" create="true" />
+		<folder external="Layout" disc="/Layout" create="true" />
 		<folder external="MovieDemo" disc="/MovieDemo" />
 		<folder external="Object" disc="/Object" create="true" />
 		<folder external="Replay/otakara" disc="/Replay/otakara" create="true" />

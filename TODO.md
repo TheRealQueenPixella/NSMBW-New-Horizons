@@ -1,8 +1,11 @@
-# To-do list (as of 06/04/2026)
-- Change texMask texture connecting C-4 to C-Tower to texMaskOpaque
-- Change third moon coin in 1-2
+# To-do list
+- ~~Change texMask texture connecting C-4 to C-Tower to texMaskOpaque~~
+- ~~Change third moon coin in 1-2~~
 - Work on 5-1
-- Complete 5-Castle
+- Work on 5-2
+- Work on 5-3
+- Work on 5-4
+- ~~Complete 5-Castle~~
 - Fix World 4 poison water material
 - FIx World 2 broken cloud platform
 - Remake World 2 metal ladders
@@ -12,13 +15,21 @@
 - Change Lost Woods sky box(is it even a box though? More like a sky plane)
 - Replace all trees in Forested Ruins with coniferous trees from World A.
 - Fix World A select island pillar materials
-- Add giant vine plant as 3-A deco
+- ~~Add giant vine plant as 3-A deco~~
 - Get rid of 3-5 pipes, possibly replacing them with palm trees
 - Turn 3-1 colored blocks into sandstones
-- Replace textures in the platform below 3-6
+- ~~Replace textures in the platform below 3-6~~
 - Make all mystery house/1UP Dash shadows squares instead of circles
 - Remove 4-5 Volcano
 - Remake second half of 2-A
-- Remove glare from final area of 3-6<br/>
+- ~~Remove glare from final area of 3-6~~
+- Rename "Star Coins" to "Moon Coins"
+- ~~Change Star Coin icons to Moon Coin ones~~
+- Add shadows under 5-Castle and 5-Mystery House
+- Check all levels for terrain lighting and remove it (I used to think it was cool 🥀)
+- Test whole thing on console to see if there are slowdowns or game breaking bugs
+- Fix credits (Mandy's working on it)
+- Add TheMarioMan to Layouts credits and Mandy to Ending Credits section. Add Playtesting section with Artrix and 0D in it.
+- <br/>
   ...<br/>
   ### Will add more as it comes out thanks to the playtesters

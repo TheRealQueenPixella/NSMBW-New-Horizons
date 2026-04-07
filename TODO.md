@@ -1,11 +1,37 @@
-# To-do list
+## Done
 - ~~Change texMask texture connecting C-4 to C-Tower to texMaskOpaque~~
 - ~~Change third moon coin in 1-2~~
+- ~~Complete 5-Castle~~
+- ~~Add giant vine plant as 3-A deco~~
+- ~~Replace textures in the platform below 3-6~~
+- ~~Remove glare from final area of 3-6~~
+- ~~Change Star Coin icons to Moon Coin ones~~
+- ~~Test whole thing on console to see if there are slowdowns or game breaking bugs~~
+# To-do lists
+
+## Levels
 - Work on 5-1
 - Work on 5-2
 - Work on 5-3
 - Work on 5-4
-- ~~Complete 5-Castle~~
+- Fix Layer 0 in 1-1
+- Change bonus room music in all levels that feature bonus rooms
+- Remake second half of 2-A
+- Check all levels for terrain lighting and remove it (I used to think it was cool 🥀)
+- Move 1-1 second coin entrance further down
+- Fix 1-2 missing gear(wtf I restarted the level and it's there now?)
+- fix all wall decorations so that they follow the specific criteria of "column - 5 tile gap - column" with the properly tiled top
+- Move A-3 first coin exit further down
+- fix exit only d-pad doors not being grey (example: 2-5)
+- Get rid of B-⚓ Bowser face covering the cheep cheeps
+- Replace rock walls in 3-2 with red bushes
+- Make snow piles grey in Snowy Ash Tower
+- Add randomization to Pa2_castle_bg
+- FIX PALM TREE CAVERN CRASHING ON CONSOLE (URGENT!)
+- Add Ghost Fog to 4-1
+- Divide 4-5 final area in two separate zones<br/>
+
+## Models  
 - Fix World 4 poison water material
 - FIx World 2 broken cloud platform
 - Remake World 2 metal ladders
@@ -15,21 +41,24 @@
 - Change Lost Woods sky box(is it even a box though? More like a sky plane)
 - Replace all trees in Forested Ruins with coniferous trees from World A.
 - Fix World A select island pillar materials
-- ~~Add giant vine plant as 3-A deco~~
 - Get rid of 3-5 pipes, possibly replacing them with palm trees
 - Turn 3-1 colored blocks into sandstones
-- ~~Replace textures in the platform below 3-6~~
 - Make all mystery house/1UP Dash shadows squares instead of circles
 - Remove 4-5 Volcano
-- Remake second half of 2-A
-- ~~Remove glare from final area of 3-6~~
-- Rename "Star Coins" to "Moon Coins"
-- ~~Change Star Coin icons to Moon Coin ones~~
 - Add shadows under 5-Castle and 5-Mystery House
-- Check all levels for terrain lighting and remove it (I used to think it was cool 🥀)
-- Test whole thing on console to see if there are slowdowns or game breaking bugs
+- fix stone gear model flickering on console
+- Remove 2-3 bush from WMap
+- Fix World 2 pillars becoming dark when standing at 2-Tower
+- Figure out why the platform before 2-Castle draws in front of the background cloud
+- Fix World B select island being transparent
+- Fix top of World 2 select island pillars being darker
+- Somehow fix mystery house model flickering in W3
+- Somehow fix 1UP Dash and Sunken Ship models flickering in WC
+
+## Other
+- Rename "Star Coins" to "Moon Coins"
 - Fix credits (Mandy's working on it)
 - Add TheMarioMan to Layouts credits and Mandy to Ending Credits section. Add Playtesting section with Artrix and 0D in it.
-- <br/>
-  ...<br/>
+- Fix Kamek's model not appearing in the World Map cutscenes
+   
   ### Will add more as it comes out thanks to the playtesters

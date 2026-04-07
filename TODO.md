@@ -7,6 +7,9 @@
 - ~~Remove glare from final area of 3-6~~
 - ~~Change Star Coin icons to Moon Coin ones~~
 - ~~Test whole thing on console to see if there are slowdowns or game breaking bugs~~
+- ~~FIX PALM TREE CAVERN CRASHING ON CONSOLE (URGENT!)~~
+- ~~Fix Layer 0 in 1-1~~
+- ~~Move 1-1 second coin entrance further down~~
 # To-do lists
 
 ## Levels
@@ -14,11 +17,9 @@
 - Work on 5-2
 - Work on 5-3
 - Work on 5-4
-- Fix Layer 0 in 1-1
 - Change bonus room music in all levels that feature bonus rooms
 - Remake second half of 2-A
 - Check all levels for terrain lighting and remove it (I used to think it was cool 🥀)
-- Move 1-1 second coin entrance further down
 - Fix 1-2 missing gear(wtf I restarted the level and it's there now?)
 - fix all wall decorations so that they follow the specific criteria of "column - 5 tile gap - column" with the properly tiled top
 - Move A-3 first coin exit further down
@@ -27,7 +28,7 @@
 - Replace rock walls in 3-2 with red bushes
 - Make snow piles grey in Snowy Ash Tower
 - Add randomization to Pa2_castle_bg
-- FIX PALM TREE CAVERN CRASHING ON CONSOLE (URGENT!)
+- Add randomization to Pa1_evil_nohara
 - Add Ghost Fog to 4-1
 - Divide 4-5 final area in two separate zones<br/>
 
@@ -60,5 +61,6 @@
 - Fix credits (Mandy's working on it)
 - Add TheMarioMan to Layouts credits and Mandy to Ending Credits section. Add Playtesting section with Artrix and 0D in it.
 - Fix Kamek's model not appearing in the World Map cutscenes
+- 
    
   ### Will add more as it comes out thanks to the playtesters

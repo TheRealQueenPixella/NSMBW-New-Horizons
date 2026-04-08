@@ -83,6 +83,7 @@
 			<attach sprite="515-523"/> <!-- Newer Bosses -->
 			<attach sprite="527"/> <!-- Newer Ending -->
 			<attach sprite="534"/> <!-- Newer Credits -->
+			<attach sprite="535"/> <!-- New Horizons Credits -->
 		</category>
 	</view>
 	<view name="Custom">

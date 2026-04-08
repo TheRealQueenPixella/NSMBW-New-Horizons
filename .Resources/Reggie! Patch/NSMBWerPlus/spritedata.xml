@@ -2222,5 +2222,14 @@
 	<checkbox nybble="12.4" title="Plays cutscene when finished" comment="If enabled, the post-credits cutscene will play when the credits end."/>
 	<checkbox nybble="12.3" title="Show credits highscore" comment="Shows the most coins collected during the credits, if enabled."/>
   </sprite> <!-- #534: Cutscene Controller - Newer Credits -->
+
+  <sprite id="535" name="New Horizons Credits Manager" notes="This manages a single card of New Horizons' credits sequence. One must be present in every zone!">
+    <value nybble="10-11" title="Card Index" comment="Determines what card will be displayed. Controls the title(s) and names, as well as any additional behaviors." requirednybble="12.3" requiredval="0"/>
+    <checkbox nybble="12.4" title="Display Two Titles" comment="If enabled, there will be a left and right section title instead of just one." requirednybble="12.3" requiredval="0"/>
+    <checkbox nybble="12.3" title="Final Card" comment="If enabled, the card will display the Thank You message, and end the credits."/>
+    <checkbox nybble="12.2" title="Center Names" comment="If enabled, the names will be centered in the card." requirednybble="12.3" requiredval="0"/>
+    <value nybble="8-9" title="Duration" comment="Controls how long the card will be present before closing and continuing to the next screen." comment2="Each value increments the delay by 10 frames."/>
+    <value nybble="5-6" title="Entrance ID" comment="Determines what entrance the player will be sent through during the screen change. This behaves the same as in the Special Exit Controller." idtype="Entrance" requirednybble="12.3" requiredval="0"/>
+  </sprite> <!-- #535: New Horizons Credits Manager -->
 </sprites>
 <!-- Thank you so much for a-playing my game! -->

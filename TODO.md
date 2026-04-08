@@ -13,6 +13,10 @@
 - ~~Check all levels for terrain lighting and remove it (I used to think it was cool 🥀)~~
 - ~~Divide 4-5 final area in two separate zones~~
 - ~~Add Ghost Fog to 4-1~~
+- ~~Figure out why the damn Midnight Mangrove (A-3) course select node is marked as incomplete even when it is completed~~
+- ~~Rename "Star Coins" to "Moon Coins"~~
+- ~~Fix credits (Mandy's working on it)~~
+- ~~Add TheMarioMan to Layouts credits and Mandy to Ending Credits section. Add Playtesting section with Artrix and 0D in it.~~
   
 # To-do lists
 
@@ -38,7 +42,6 @@
 - FIx World 2 broken cloud platform
 - Remake World 2 metal ladders
 - Change World 5 select island
-- Figure out why the damn Midnight Mangrove (A-3) course select node is marked as incomplete even when it is completed
 - Import stone pillars over Lost Woods' snowy mountains
 - Change Lost Woods sky box(is it even a box though? More like a sky plane)
 - Replace all trees in Forested Ruins with coniferous trees from World A.
@@ -58,9 +61,6 @@
 - Somehow fix 1UP Dash and Sunken Ship models flickering in WC
 
 ## Other
-- Rename "Star Coins" to "Moon Coins"
-- Fix credits (Mandy's working on it)
-- Add TheMarioMan to Layouts credits and Mandy to Ending Credits section. Add Playtesting section with Artrix and 0D in it.
 - Fix Kamek's model not appearing in the World Map cutscenes
 - 
    

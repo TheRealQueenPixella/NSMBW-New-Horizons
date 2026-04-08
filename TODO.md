@@ -10,6 +10,10 @@
 - ~~FIX PALM TREE CAVERN CRASHING ON CONSOLE (URGENT!)~~
 - ~~Fix Layer 0 in 1-1~~
 - ~~Move 1-1 second coin entrance further down~~
+- ~~Check all levels for terrain lighting and remove it (I used to think it was cool 🥀)~~
+- ~~Divide 4-5 final area in two separate zones~~
+- ~~Add Ghost Fog to 4-1~~
+  
 # To-do lists
 
 ## Levels
@@ -19,7 +23,6 @@
 - Work on 5-4
 - Change bonus room music in all levels that feature bonus rooms
 - Remake second half of 2-A
-- Check all levels for terrain lighting and remove it (I used to think it was cool 🥀)
 - Fix 1-2 missing gear(wtf I restarted the level and it's there now?)
 - fix all wall decorations so that they follow the specific criteria of "column - 5 tile gap - column" with the properly tiled top
 - Move A-3 first coin exit further down
@@ -28,9 +31,7 @@
 - Replace rock walls in 3-2 with red bushes
 - Make snow piles grey in Snowy Ash Tower
 - Add randomization to Pa2_castle_bg
-- Add randomization to Pa1_evil_nohara
-- Add Ghost Fog to 4-1
-- Divide 4-5 final area in two separate zones<br/>
+- Add randomization to Pa1_evil_nohara<br/>
 
 ## Models  
 - Fix World 4 poison water material

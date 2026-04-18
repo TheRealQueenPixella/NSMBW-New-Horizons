@@ -17,11 +17,11 @@
 - ~~Rename "Star Coins" to "Moon Coins"~~
 - ~~Fix credits (Mandy's working on it)~~
 - ~~Add TheMarioMan to Layouts credits and Mandy to Ending Credits section. Add Playtesting section with Artrix and 0D in it.~~
+- ~~Work on 5-1~~
   
 # To-do lists
 
 ## Levels
-- Work on 5-1
 - Work on 5-2
 - Work on 5-3
 - Work on 5-4

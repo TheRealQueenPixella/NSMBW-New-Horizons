@@ -62,6 +62,7 @@
 
 ## Other
 - Fix Kamek's model not appearing in the World Map cutscenes
-- 
+- Fix Dry Bowser's Castle progress not being saved after beating the level
+- Change Toad House messages ("go through the door" -> "enter the pipe" and "go through the door" -> "go through one of the doors")
    
   ### Will add more as it comes out thanks to the playtesters

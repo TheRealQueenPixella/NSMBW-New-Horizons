@@ -18,6 +18,7 @@
 - ~~Fix credits (Mandy's working on it)~~
 - ~~Add TheMarioMan to Layouts credits and Mandy to Ending Credits section. Add Playtesting section with Artrix and 0D in it.~~
 - ~~Work on 5-1~~
+- ~~Change bonus room music in all levels that feature bonus rooms~~
   
 # To-do lists
 
@@ -25,7 +26,6 @@
 - Work on 5-2
 - Work on 5-3
 - Work on 5-4
-- Change bonus room music in all levels that feature bonus rooms
 - Remake second half of 2-A
 - Fix 1-2 missing gear(wtf I restarted the level and it's there now?)
 - fix all wall decorations so that they follow the specific criteria of "column - 5 tile gap - column" with the properly tiled top

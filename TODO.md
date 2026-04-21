@@ -20,6 +20,7 @@
 - ~~Work on 5-1~~
 - ~~Change bonus room music in all levels that feature bonus rooms~~
 - ~~Move A-3 first coin exit further down~~
+- ~~Fix 1-2 missing gear(wtf I restarted the level and it's there now?)~~
   
 # To-do lists
 
@@ -28,7 +29,6 @@
 - Work on 5-3
 - Work on 5-4
 - Remake second half of 2-A
-- Fix 1-2 missing gear(wtf I restarted the level and it's there now?)
 - fix all wall decorations so that they follow the specific criteria of "column - 5 tile gap - column" with the properly tiled top
 - Move all exits down so that they are precisely 3 blocks lower than the zone boundary (necessary in order for the propeller suit's propeller to not show when going down these entrances
 - fix exit only d-pad doors not being grey (example: 2-5)

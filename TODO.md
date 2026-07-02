@@ -22,6 +22,9 @@
 - ~~Move A-3 first coin exit further down~~
 - ~~Fix 1-2 missing gear(wtf I restarted the level and it's there now?)~~
 - ~~Move all exits down so that they are precisely 3 blocks lower than the zone boundary (necessary in order for the propeller suit's propeller to not show when going down these entrances~~
+- ~~Fix Kamek's model not appearing in the World Map cutscenes~~
+- ~~Fix Dry Bowser's Castle progress not being saved after beating the level~~
+- ~~Change Toad House messages ("go through the door" -> "enter the pipe" and "go through the door" -> "go through one of the doors")~~
   
 # To-do lists
 
@@ -62,9 +65,6 @@
 - Somehow fix 1UP Dash and Sunken Ship models flickering in WC
 
 ## Other
-- Fix Kamek's model not appearing in the World Map cutscenes
-- Fix Dry Bowser's Castle progress not being saved after beating the level
-- Change Toad House messages ("go through the door" -> "enter the pipe" and "go through the door" -> "go through one of the doors")
 - Change the loading screen world images
    
   ### Will add more as it comes out thanks to the playtesters

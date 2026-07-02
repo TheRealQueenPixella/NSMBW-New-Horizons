@@ -25,6 +25,8 @@
 - ~~Fix Kamek's model not appearing in the World Map cutscenes~~
 - ~~Fix Dry Bowser's Castle progress not being saved after beating the level~~
 - ~~Change Toad House messages ("go through the door" -> "enter the pipe" and "go through the door" -> "go through one of the doors")~~
+- ~~Add randomization to Pa2_castle_bg~~
+- ~~Add randomization to Pa1_evil_nohara~~
   
 # To-do lists
 
@@ -38,8 +40,6 @@
 - Get rid of B-⚓ Bowser face covering the cheep cheeps
 - Replace rock walls in 3-2 with red bushes
 - Make snow piles grey in Snowy Ash Tower
-- Add randomization to Pa2_castle_bg
-- Add randomization to Pa1_evil_nohara<br/>
 
 ## Models  
 - Fix World 4 poison water material

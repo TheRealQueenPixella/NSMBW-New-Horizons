@@ -27,6 +27,7 @@
 - ~~Change Toad House messages ("go through the door" -> "enter the pipe" and "go through the door" -> "go through one of the doors")~~
 - ~~Add randomization to Pa2_castle_bg~~
 - ~~Add randomization to Pa1_evil_nohara~~
+- ~~Fix World A select island pillar materials~~
   
 # To-do lists
 
@@ -49,7 +50,6 @@
 - Import stone pillars over Lost Woods' snowy mountains
 - Change Lost Woods sky box(is it even a box though? More like a sky plane)
 - Replace all trees in Forested Ruins with coniferous trees from World A.
-- Fix World A select island pillar materials
 - Get rid of 3-5 pipes, possibly replacing them with palm trees
 - Turn 3-1 colored blocks into sandstones
 - Make all mystery house/1UP Dash shadows squares instead of circles

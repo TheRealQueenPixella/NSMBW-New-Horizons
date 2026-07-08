@@ -28,6 +28,12 @@
 - ~~Add randomization to Pa2_castle_bg~~
 - ~~Add randomization to Pa1_evil_nohara~~
 - ~~Fix World A select island pillar materials~~
+- ~~Remake second half of 2-A~~
+- ~~fix all wall decorations so that they follow the specific criteria of "column - 5 tile gap - column" with the properly tiled top~~
+- ~~Get rid of B-⚓ Bowser face covering the cheep cheeps~~
+- ~~Replace rock walls in 3-2 with red bushes~~
+- ~~Make snow piles grey in Snowy Ash Tower~~
+- ~~fix exit only d-pad doors not being grey (example: 2-5)~~
   
 # To-do lists
 
@@ -35,12 +41,6 @@
 - Work on 5-2
 - Work on 5-3
 - Work on 5-4
-- Remake second half of 2-A
-- fix all wall decorations so that they follow the specific criteria of "column - 5 tile gap - column" with the properly tiled top
-- fix exit only d-pad doors not being grey (example: 2-5)
-- Get rid of B-⚓ Bowser face covering the cheep cheeps
-- Replace rock walls in 3-2 with red bushes
-- Make snow piles grey in Snowy Ash Tower
 
 ## Models  
 - Fix World 4 poison water material

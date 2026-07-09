@@ -51,7 +51,7 @@
 122:Snow
 123:Mini-Mega
 124:Cliffs
-125:Autumn
+125:Dragon Dance [NH]
 126:Crystal Caves
 127:Ghost House
 128:Bonneton [NH]

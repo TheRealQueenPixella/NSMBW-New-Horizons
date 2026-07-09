@@ -7,7 +7,7 @@
 		<region type="W"/>
 	</id>
 	<options>
-		<section name="NewHorizons">
+		<section name="NSMBW New Horizons">
 			<option name="Game" id="NewHorizons" default="1">
 				<choice name="Enabled"><patch id="NewHorizons"/></choice>
 			</option>
@@ -18,7 +18,7 @@
 		<folder external="Effect" disc="/Effect" />
 		<folder external="Env" disc="/Env" />
 		<folder external="HomeButton2" disc="/HomeButton2" />
-		<folder external="Layout" create="true" />
+		<folder external="Layout" />
 		<folder external="Layout" disc="/Layout" create="true" />
 		<folder external="MovieDemo" disc="/MovieDemo" />
 		<folder external="Object" disc="/Object" create="true" />
@@ -50,9 +50,6 @@
 		<file external="Messages.bin" disc="/Messages.bin" create="true"/>
 		<file external="NewerStaffRoll.bin" disc="/NewerStaffRoll.bin" create="true"/>
 		<file external="RandTiles.bin" disc="/RandTiles.bin" create="true"/>
-		
-		<!-- Not actually changed, just here for ease of access -->
-
 		
 		<!-- Save name change -->
 		<!-- EU -->    <memory offset="0x802F148C" value="4E6577486F7257" original="7769696D6A3264" />

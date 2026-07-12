@@ -34,7 +34,6 @@
 - ~~Replace rock walls in 3-2 with red bushes~~
 - ~~Make snow piles grey in Snowy Ash Tower~~
 - ~~fix exit only d-pad doors not being grey (example: 2-5)~~
-- ~~Fix World 4 poison water material~~
   
 # To-do lists
 
@@ -44,6 +43,7 @@
 - Work on 5-4
 
 ## Models  
+- Fix World 4 poison water material
 - FIx World 2 broken cloud platform
 - Remake World 2 metal ladders
 - Change World 5 select island

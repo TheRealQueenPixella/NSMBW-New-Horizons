@@ -35,6 +35,8 @@
 - ~~Make snow piles grey in Snowy Ash Tower~~
 - ~~fix exit only d-pad doors not being grey (example: 2-5)~~
 - ~~Fix World 4 poison water material~~
+- ~~Fix World 2 broken cloud platform~~
+- 
   
 # To-do lists
 
@@ -44,7 +46,6 @@
 - Work on 5-4
 
 ## Models  
-- FIx World 2 broken cloud platform
 - Remake World 2 metal ladders
 - Change World 5 select island
 - Import stone pillars over Lost Woods' snowy mountains

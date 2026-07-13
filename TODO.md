@@ -36,7 +36,13 @@
 - ~~fix exit only d-pad doors not being grey (example: 2-5)~~
 - ~~Fix World 4 poison water material~~
 - ~~Fix World 2 broken cloud platform~~
-- 
+- ~~fix stone gear model flickering on console~~
+- ~~Fix World 2 pillars becoming dark when standing at 2-Tower~~
+- ~~Figure out why the platform before 2-Castle draws in front of the background cloud~~
+- ~~Fix World B select island being transparent~~
+- ~~Fix top of World 2 select island pillars being darker~~
+- ~~Somehow fix mystery house model flickering in W3~~
+- ~~Somehow fix 1UP Dash and Sunken Ship models flickering in WC~~
   
 # To-do lists
 
@@ -56,14 +62,7 @@
 - Make all mystery house/1UP Dash shadows squares instead of circles
 - Remove 4-5 Volcano
 - Add shadows under 5-Castle and 5-Mystery House
-- fix stone gear model flickering on console
 - Remove 2-3 bush from WMap
-- Fix World 2 pillars becoming dark when standing at 2-Tower
-- Figure out why the platform before 2-Castle draws in front of the background cloud
-- Fix World B select island being transparent
-- Fix top of World 2 select island pillars being darker
-- Somehow fix mystery house model flickering in W3
-- Somehow fix 1UP Dash and Sunken Ship models flickering in WC
 
 ## Other
 - Change the loading screen world images

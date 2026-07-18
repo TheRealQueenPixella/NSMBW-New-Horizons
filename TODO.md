@@ -43,6 +43,8 @@
 - ~~Fix top of World 2 select island pillars being darker~~
 - ~~Somehow fix mystery house model flickering in W3~~
 - ~~Somehow fix 1UP Dash and Sunken Ship models flickering in WC~~
+- ~~Remake World 2 metal ladders and rails~~
+- ~~Remove 2-3 bush from WMap~~
   
 # To-do lists
 
@@ -52,7 +54,6 @@
 - Work on 5-4
 
 ## Models  
-- Remake World 2 metal ladders
 - Change World 5 select island
 - Import stone pillars over Lost Woods' snowy mountains
 - Change Lost Woods sky box(is it even a box though? More like a sky plane)
@@ -62,7 +63,6 @@
 - Make all mystery house/1UP Dash shadows squares instead of circles
 - Remove 4-5 Volcano
 - Add shadows under 5-Castle and 5-Mystery House
-- Remove 2-3 bush from WMap
 
 ## Other
 - Change the loading screen world images

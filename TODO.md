@@ -48,6 +48,7 @@
 - ~~Change World 5 select island~~
 - ~~Import stone pillars over Lost Woods' snowy mountains~~
 - ~~Change Lost Woods sky box(is it even a box though? More like a sky plane)~~
+- ~~Replace all trees in Forested Ruins with coniferous trees from World A.~~
   
 # To-do lists
 
@@ -57,7 +58,6 @@
 - Work on 5-4
 
 ## Models  
-- Replace all trees in Forested Ruins with coniferous trees from World A.
 - Get rid of 3-5 pipes, possibly replacing them with palm trees
 - Turn 3-1 colored blocks into sandstones
 - Make all mystery house/1UP Dash shadows squares instead of circles

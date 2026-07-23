@@ -46,6 +46,8 @@
 - ~~Remake World 2 metal ladders and rails~~
 - ~~Remove 2-3 bush from WMap~~
 - ~~Change World 5 select island~~
+- ~~Import stone pillars over Lost Woods' snowy mountains~~
+- ~~Change Lost Woods sky box(is it even a box though? More like a sky plane)~~
   
 # To-do lists
 
@@ -55,8 +57,6 @@
 - Work on 5-4
 
 ## Models  
-- Import stone pillars over Lost Woods' snowy mountains
-- Change Lost Woods sky box(is it even a box though? More like a sky plane)
 - Replace all trees in Forested Ruins with coniferous trees from World A.
 - Get rid of 3-5 pipes, possibly replacing them with palm trees
 - Turn 3-1 colored blocks into sandstones

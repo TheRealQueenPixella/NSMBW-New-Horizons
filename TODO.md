@@ -49,6 +49,7 @@
 - ~~Import stone pillars over Lost Woods' snowy mountains~~
 - ~~Change Lost Woods sky box(is it even a box though? More like a sky plane)~~
 - ~~Replace all trees in Forested Ruins with coniferous trees from World A.~~
+- ~~Change the loading screen world images~~
   
 # To-do lists
 
@@ -63,8 +64,5 @@
 - Make all mystery house/1UP Dash shadows squares instead of circles
 - Remove 4-5 Volcano
 - Add shadows under 5-Castle and 5-Mystery House
-
-## Other
-- Change the loading screen world images
    
   ### Will add more as it comes out thanks to the playtesters

@@ -50,6 +50,8 @@
 - ~~Change Lost Woods sky box(is it even a box though? More like a sky plane)~~
 - ~~Replace all trees in Forested Ruins with coniferous trees from World A.~~
 - ~~Change the loading screen world images~~
+- ~~Make all mystery house/1UP Dash shadows squares instead of circles~~
+- ~~Add shadows under 5-Castle and 5-Mystery House~~
   
 # To-do lists
 
@@ -61,8 +63,6 @@
 ## Models  
 - Get rid of 3-5 pipes, possibly replacing them with palm trees
 - Turn 3-1 colored blocks into sandstones
-- Make all mystery house/1UP Dash shadows squares instead of circles
 - Remove 4-5 Volcano
-- Add shadows under 5-Castle and 5-Mystery House
    
   ### Will add more as it comes out thanks to the playtesters

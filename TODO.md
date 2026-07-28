@@ -53,6 +53,8 @@
 - ~~Make all mystery house/1UP Dash shadows squares instead of circles~~
 - ~~Add shadows under 5-Castle and 5-Mystery House~~
 - ~~Remove 4-5 Volcano~~
+- ~~Turn 3-1 colored blocks into sandstones~~
+- ~~Get rid of 3-5 pipes, possibly replacing them with palm trees~~
   
 # To-do lists
 
@@ -60,9 +62,5 @@
 - Work on 5-2
 - Work on 5-3
 - Work on 5-4
-
-## Models  
-- Get rid of 3-5 pipes, possibly replacing them with palm trees
-- Turn 3-1 colored blocks into sandstones
    
   ### Will add more as it comes out thanks to the playtesters

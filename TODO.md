@@ -56,11 +56,11 @@
 - ~~Turn 3-1 colored blocks into sandstones~~
 - ~~Get rid of 3-5 pipes, possibly replacing them with palm trees~~
 - ~~Work on 5-2~~
+- ~~Work on 5-3~~
   
 # To-do lists
 
 ## Levels
-- Work on 5-3
 - Work on 5-4
    
   ### Will add more as it comes out thanks to the playtesters

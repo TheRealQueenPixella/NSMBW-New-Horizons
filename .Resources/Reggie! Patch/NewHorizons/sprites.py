@@ -80,15 +80,14 @@ class SpriteImage_Block(SLib.SpriteImage):  # 207, 208, 209, 221, 255, 256, 402,
         self.eightIsMushroom = False
         self.twelveIsMushroom = False
         self.rotates = False
+        self.flipOverride = False
 
     def dataChanged(self):
-        super().dataChanged()
-
         # SET CONTENTS
         # In the blocks.png file:
         # 0 = Empty, 1 = Coin, 2 = Mushroom, 3 = Fire Flower, 4 = Propeller, 5 = Penguin Suit,
         # 6 = Mini Shroom, 7 = Star, 8 = Continuous Star, 9 = Yoshi Egg, 10 = 10 Coins,
-        # 11 = 1-up, 12 = Vine, 13 = Spring, 14 = Shroom/Coin, 15 = Ice Flower, 16 = Toad, 17 = Hammer
+        # 11 = 1-up, 12 = Vine, 13 = Spring, 14 = Shroom/Coin, 15 = Ice Flower, 16 = Toad, 20 = Hammer
 
         if self.contentsOverride is not None:
             contents = self.contentsOverride
@@ -96,14 +95,14 @@ class SpriteImage_Block(SLib.SpriteImage):  # 207, 208, 209, 221, 255, 256, 402,
             contents = self.parent.spritedata[self.contentsNybble] & 0xF
 
         if contents == 2:  # Hammer
-            contents = 17
+            contents = 20
 
         if contents == 12 and self.twelveIsMushroom:
             contents = 2  # 12 is a mushroom on some types
         if contents == 8 and self.eightIsMushroom:
             contents = 2  # same as above, but for type 8
 
-        self.image = ImageCache['BlockContents'][contents]
+        self.image = ImageCache[f'BlockContents{contents}']
 
         # SET UP ROTATION
         if self.rotates:
@@ -123,8 +122,14 @@ class SpriteImage_Block(SLib.SpriteImage):  # 207, 208, 209, 221, 255, 256, 402,
             transform.translate(-12, -12)
             self.parent.setTransform(transform)
 
+        # Flip a switch override
+        if self.flipOverride:
+            flip = self.image.toImage().mirrored(True, True)
+            self.image = self.image.fromImage(flip)
+
     def paint(self, painter):
-        super().paint(painter)
+        if self.image is None:
+            return
 
         painter.setRenderHint(QtGui.QPainter.RenderHint.Antialiasing)
         if self.tilenum < len(SLib.Tiles):
@@ -550,32 +555,20 @@ class SpriteImage_NewerExcSwitch(SpriteImage_NewerSwitch):  # 42
         self.switchType = 'E'
 
 
-class SpriteImage_NewerQSwitchBlock(SLib.SpriteImage_StaticMultiple):  # 43
-    @staticmethod
-    def loadImages():
-        if 'QSwitchBlock' in ImageCache: return
-        q = SLib.GetImg('q_switch_block.png', True)
-        ImageCache['QSwitchBlock'] = QtGui.QPixmap.fromImage(q)
-        ImageCache['QSwitchBlockU'] = QtGui.QPixmap.fromImage(q.mirrored(True, True))
-
-        if 'QSwitchBlock3' in ImageCache: return
-        q = SLib.GetImg('q_switch_block3.png', True)
-        if q is None: return
-        ImageCache['QSwitchBlock3'] = QtGui.QPixmap.fromImage(q)
-        ImageCache['QSwitchBlock3U'] = QtGui.QPixmap.fromImage(q.mirrored(True, True))
+class SpriteImage_NewerQSwitchBlock(SpriteImage_Block):  # 43
+    def __init__(self, parent):
+        super().__init__(parent, 1.5)
+        self.tilenum = 48
 
     def dataChanged(self):
         upsideDown = self.parent.spritedata[5] & 1
-        style = self.parent.spritedata[3] & 3
+        self.flipOverride = upsideDown
 
-        if 'QSwitchBlock3U' not in ImageCache: return
-
-        if style == 0:
-            self.image = ImageCache['QSwitchBlock'] if not upsideDown else ImageCache['QSwitchBlockU']
+        color = self.parent.spritedata[3] & 3
+        if color == 0:
+            self.contentsOverride = 17
         else:
-            self.image = ImageCache['QSwitchBlock3'] if not upsideDown else ImageCache['QSwitchBlock3U']
-
-
+            self.contentsOverride = 21
         super().dataChanged()
 
 
@@ -747,26 +740,29 @@ class SpriteImage_NewerParaKoopa(SLib.SpriteImage_StaticMultiple):  # 58
     def loadImages():
 
         if 'ParaKoopaG' not in ImageCache:
-            ImageCache['ParaKoopaG'] = SLib.GetImg('parakoopa_green.png')
-            ImageCache['ParaKoopaR'] = SLib.GetImg('parakoopa_red.png')
+            ImageCache['ParaKoopaG'] = SLib.GetPixmap('parakoopa_green.png')
+            ImageCache['ParaKoopaR'] = SLib.GetPixmap('parakoopa_red.png')
 
         if 'KoopaShellG' not in ImageCache:
-            ImageCache['KoopaShellG'] = SLib.GetImg('koopa_green_shell.png')
-            ImageCache['KoopaShellR'] = SLib.GetImg('koopa_red_shell.png')
+            ImageCache['KoopaShellG'] = SLib.GetPixmap('koopa_green_shell.png')
+            ImageCache['KoopaShellR'] = SLib.GetPixmap('koopa_red_shell.png')
 
         if 'ParaKoopa01' not in ImageCache:
             for flag in (0, 1):
                 for style in range(1, 5):
-                    flag_style = '%d%d' % (flag, style)
-                    ImageCache['ParaKoopa%s' % flag_style] = SLib.GetImg('parakoopa_%s.png' % flag_style)
+                    flag_style = f'{flag}{style}'
+                    ImageCache[f'ParaKoopa{flag_style}'] = SLib.GetPixmap(f'parakoopa_{flag_style}.png')
 
         if 'KoopaShell01' not in ImageCache:
             for flag in (0, 1):
                 for style in range(1, 4):
-                    flag_style = '%d%d' % (flag, style)
-                    ImageCache['KoopaShell%s' % flag_style] = SLib.GetImg('koopa_shell_%s.png' % flag_style)
+                    flag_style = f'{flag}{style}'
+                    ImageCache[f'KoopaShell{flag_style}'] = SLib.GetPixmap(f'koopa_shell_{flag_style}.png')
 
     def dataChanged(self):
+        if not isinstance(self.aux[0], SLib.AuxiliaryTrackObject):
+            return
+
         # get properties
         red = self.parent.spritedata[5] & 1
         mode = (self.parent.spritedata[5] >> 4) & 3
@@ -785,10 +781,10 @@ class SpriteImage_NewerParaKoopa(SLib.SpriteImage_StaticMultiple):  # 58
                 if texhack == 4:
                     self.image = ImageCache['KoopaShellG'] if not red else ImageCache['KoopaShellR']
                 else:
-                    self.image = ImageCache['KoopaShell%d%d' % (red, texhack)]
+                    self.image = ImageCache[f'KoopaShell{red}{texhack}']
             else:
                 self.offset = (-8, -12)
-                self.image = ImageCache['ParaKoopa%d%d' % (red, texhack)]
+                self.image = ImageCache[f'ParaKoopa{red}{texhack}']
 
         if mode == 1 or mode == 2:
 
@@ -1155,18 +1151,18 @@ class SpriteImage_BigPumpkin(SLib.SpriteImage_StaticMultiple):  # 157
             pix = QtGui.QPixmap(48, 24)
             pix.fill(Qt.GlobalColor.transparent)
             paint = QtGui.QPainter(pix)
-            paint.drawPixmap(0, 0, ImageCache['BlockContents'][9])
-            paint.drawPixmap(24, 0, ImageCache['BlockContents'][3])
+            paint.drawPixmap(0, 0, ImageCache['BlockContents9'])
+            paint.drawPixmap(24, 0, ImageCache['BlockContents3'])
             del paint
             ImageCache['YoshiFire'] = pix
 
         for power in range(0x10):
             if power in (0, 8, 12, 13):
-                ImageCache['BigPumpkin%d' % power] = ImageCache['BigPumpkin']
+                ImageCache[f'BigPumpkin{power}'] = ImageCache['BigPumpkin']
                 continue
 
             x, y = 36, 48
-            overlay = ImageCache['BlockContents'][power]
+            overlay = ImageCache[f'BlockContents{power}']
             if power == 9:
                 overlay = ImageCache['YoshiFire']
                 x = 24
@@ -1180,12 +1176,12 @@ class SpriteImage_BigPumpkin(SLib.SpriteImage_StaticMultiple):  # 157
             paint = QtGui.QPainter(new)
             paint.drawPixmap(x, y, overlay)
             del paint
-            ImageCache['BigPumpkin%d' % power] = new
+            ImageCache[f'BigPumpkin{power}'] = new
 
     def dataChanged(self):
 
         power = self.parent.spritedata[5] & 0xF
-        self.image = ImageCache['BigPumpkin%d' % power]
+        self.image = ImageCache[f'BigPumpkin{power}']
         super().dataChanged()
 
 

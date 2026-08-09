@@ -67,6 +67,7 @@
 - Fix 2-A darkened pillars
 - Fix 3-5 Palm Tree crash
 - Add rotation bones to Donuts bg
+- Decorate 5-Star node
 
 # Levels
 

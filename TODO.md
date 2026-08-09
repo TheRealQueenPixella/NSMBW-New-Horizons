@@ -58,6 +58,8 @@
 - ~~Work on 5-2~~
 - ~~Work on 5-3~~
 - ~~Work on 5-4~~
+- ~~Fix 3-5 Palm Tree crash~~
+- ~~Decorate 5-Star node~~
   
 # To-do lists
 
@@ -65,9 +67,7 @@
 
 - Debloat World 1 map
 - Fix 2-A darkened pillars
-- Fix 3-5 Palm Tree crash
 - Add rotation bones to Donuts bg
-- Decorate 5-Star node
 
 # Levels
 

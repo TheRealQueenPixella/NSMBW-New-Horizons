@@ -61,6 +61,21 @@
   
 # To-do lists
 
-Mod is done :D
+# Models
+
+- Debloat World 1 map
+- Fix 2-A darkened pillars
+- Fix 3-5 Palm Tree crash
+- Add rotation bones to Donuts bg
+
+# Levels
+
+- Change 2-A goal pole area music to Dragon Dance
+- Replace 2-4 spiked balls with grrrols
+- 2-Castle tiling error in pre-airship area
+- Replace 5-1 fake grrrols with real ones
+- Fix 5-3 second checkpoint spawn entrance
+- Change Zone theme in 5-4 to Final Battle instead of Lava/Lava Underground
+- There's three levels that are laggy in some sections. C-1, 5-1, 5-Star. Go figure
    
   ### Will add more as it comes out thanks to the playtesters
